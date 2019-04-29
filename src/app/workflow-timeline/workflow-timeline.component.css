@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #dedcd5;
+	color: #515152;
+	font-family: 'Roboto';
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 1rem 0.5rem rgba(118,118,118,.05), 0.125rem 0.125rem 0.0625rem rgba(118,118,118,.3);
+  overflow: hidden;
+}
+
+p {
+	margin: 0;
+}
+
+.workflow-timeline-container {
+  display: flex;
+  flex-direction: row;
+  height: 8rem;
+}
+
+.workflow-timeline-container::before {
+	content: '';
+	position: absolute;
+	top: 40%;
+	left: 0;
+	width: 100%;
+	height: 0.125rem;
+	background-image: linear-gradient(to right,#3d7da1,#00856f);
+}
+
+/* Timeline block */
+.step-block {
+	clear: both;
+	content: "";
+	display: block;
+	position: relative;
+	flex: 1;
+}
+
+.step-block::before {
+	left: 50%;
+	margin-left: 0.438rem;
+	top: 0.438rem;
+	margin-top: 0.438rem;
+	border-color: transparent;
+	border-bottom-color: white;
+}
+
+/* Timeline step counter */
+.step-number {
+	font-size: 1.5rem;
+	border-radius: 50%;
+	top: 45%;
+	line-height: 2.5rem;
+	margin-top: -1.563rem;
+	left: 50%;
+	margin-left: -1.563rem;
+	position: absolute;
+	text-align: center;
+	height: 2.5rem;
+	width: 2.5rem;
+	color: #00856f;
+	box-shadow: 0px 0px 0px 2px #00856f;
+	background-color: #fff;
+}
+
+/* Convert it to scss once in the project */
+
+.step-block.finished .step-number {
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #00856f;
+	border: none;
+}
+
+/* .step-block.finished .step-number::after {
+	content: '✔'
+} */
+
+.step-block.active .step-name {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.step-block.active .step-number {
+	background-color: #fff;
+	font-weight: bold;
+	color: #00856f;
+	height: 3.125rem;
+	width: 3.125rem;
+	line-height: 3.125rem;
+	font-size: 2rem;
+	top: 40%;
+}
+
+
+.step-name {
+	font-family: 'Titillium Web';
+	text-transform: uppercase;
+	color: #3d7da1;
+}
+
+.step-content {
+	padding: 1.5rem;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+	height: 4rem;
+	max-height: 4rem;
+}
+
+.target-profile {
+	font-style: italic;
+}
+
+/* TODO MEDIA QUERIES */
