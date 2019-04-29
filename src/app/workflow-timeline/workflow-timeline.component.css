@@ -1,14 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i');
 
 * {
   box-sizing: border-box;
-}
-
-body {
-	background-color: #dedcd5;
-	color: #515152;
-	font-family: 'Roboto';
 }
 
 .wrapper {
@@ -60,6 +54,7 @@ p {
 
 /* Timeline step counter */
 .step-number {
+  font-family: 'Roboto';
 	font-size: 1.5rem;
 	border-radius: 50%;
 	top: 45%;
@@ -84,10 +79,6 @@ p {
 	background-color: #00856f;
 	border: none;
 }
-
-/* .step-block.finished .step-number::after {
-	content: '✔'
-} */
 
 .step-block.active .step-name {
 	font-weight: bold;
