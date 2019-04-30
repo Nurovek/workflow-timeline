@@ -1,8 +1,8 @@
 <!-- Component that will take an array of steps -->
 <div class='wrapper'> 
   <section id="{{'workflow-'+offer+'-'+type}}" class='workflow-timeline-container'>
-    <div id='step-step.stepNumber' class='finished step-block' *ngFor='let step of steps' [class.active]="step.isActive" [class.finished]="step.isFinished">
-      <div class='step-number'>{{step.stepNumber}}</div>
+    <div id='step-step.stepNumber' class='finished step-block' *ngFor='let step of steps; let i = index' [class.active]="step.isActive" [class.finished]="step.isFinished">
+      <div class='step-number'>{{i+1}}</div>
       <div class='step-content'>
         <p class='step-name'>{{step.stepName}}</p>
       </div>

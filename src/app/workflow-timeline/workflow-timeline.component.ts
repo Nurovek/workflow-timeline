@@ -1,20 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-
-// TODO Step interface
-// export interface Step {
-//   stepNumber: number,
-//   stepName: string,
-//   isActive?: boolean,
-//   isFinished?: boolean,
-
-//   stepInformations?: {
-//     targetProfile?: string,
-//     status?: string,
-//     processedBy?: string,
-//     statusDate?: number
-//   }
-// }
+import { IStep } from '../step';
 
 
 @Component({
@@ -24,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class WorkflowTimelineComponent implements OnInit {
 
-  @Input() steps: [];
+  @Input() steps: Array<IStep>;
   @Input() offer: string;
   @Input() type: string;
 

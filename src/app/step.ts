@@ -1,5 +1,4 @@
-export interface Step {
-  stepNumber: number,
+export interface IStep {
   stepName: string,
   isActive?: boolean,
   isFinished?: boolean,
