@@ -10,8 +10,6 @@ import { IStep } from '../step';
 export class WorkflowTimelineComponent implements OnInit {
 
   @Input() steps: Array<IStep>;
-  @Input() offer: string;
-  @Input() type: string;
 
   constructor() { }
 
